@@ -21,7 +21,7 @@ public class App {
         camion.desconectar();
 
         IFabricaAbstracta fabricaServicio = FabricaProductor.getFactory("SERVICIO");
-        
+
         IConexionServicio inspeccion = fabricaServicio.getServicio("INSPECCION");
         inspeccion.ejecutarServicio();
 

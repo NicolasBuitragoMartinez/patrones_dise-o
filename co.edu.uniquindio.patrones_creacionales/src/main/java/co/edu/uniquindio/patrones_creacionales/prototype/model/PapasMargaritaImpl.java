@@ -14,13 +14,11 @@ public class PapasMargaritaImpl implements IProducto {
     @Override
     public IProducto clonar() {
         PapasMargaritaImpl producto = null;
-
         try {
             producto = (PapasMargaritaImpl) clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-
         return producto;
     }
     @Override
